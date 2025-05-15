@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sob Galerie</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Sob Galerie</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#accueil" class="hover:text-blue-600">Accueil</a></li>
+        <li><a href="#galerie" class="hover:text-blue-600">Galerie</a></li>
+        <li><a href="#projets" class="hover:text-blue-600">Projets</a></li>
+        <li><a href="#services" class="hover:text-blue-600">Services</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="accueil" class="text-center py-20 bg-blue-100">
+    <h2 class="text-4xl font-bold mb-4">Bienvenue sur Sob Galerie</h2>
+    <p class="text-lg">Mon portfolio personnel où je partage mes créations, projets et services.</p>
+  </section>
+
+  <section id="galerie" class="py-16 container mx-auto px-4">
+    <h3 class="text-3xl font-bold mb-8 text-center">Galerie de créations</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src="https://via.placeholder.com/300" alt="Création 1" class="rounded shadow">
+      <img src="https://via.placeholder.com/300" alt="Création 2" class="rounded shadow">
+      <img src="https://via.placeholder.com/300" alt="Création 3" class="rounded shadow">
+    </div>
+  </section>
+
+  <section id="projets" class="bg-white py-16 container mx-auto px-4">
+    <h3 class="text-3xl font-bold mb-8 text-center">Mes projets</h3>
+    <div class="space-y-6">
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="text-xl font-semibold">Application 1</h4>
+        <p>Une brève description de cette application incroyable.</p>
+        <a href="https://example.com/app1" target="_blank" class="text-blue-600 underline">Voir le projet</a>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow">
+        <h4 class="text-xl font-semibold">Application 2</h4>
+        <p>Une autre création utile et fonctionnelle.</p>
+        <a href="https://example.com/app2" target="_blank" class="text-blue-600 underline">Voir le projet</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-16 bg-blue-50 container mx-auto px-4">
+    <h3 class="text-3xl font-bold mb-8 text-center">Mes services</h3>
+    <ul class="space-y-4">
+      <li class="bg-white p-4 shadow rounded">Création de site web personnalisé</li>
+      <li class="bg-white p-4 shadow rounded">Développement d'application web</li>
+      <li class="bg-white p-4 shadow rounded">Design graphique et identité visuelle</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="py-16 container mx-auto px-4">
+    <h3 class="text-3xl font-bold mb-8 text-center">Contactez-moi</h3>
+    <form action="https://formspree.io/f/sob-l'antic" method="POST" class="max-w-xl mx-auto bg-white p-6 rounded shadow space-y-4">
+      <input type="text" name="name" placeholder="Votre nom" class="w-full border p-2 rounded" required>
+      <input type="email" name="email" placeholder="Votre email" class="w-full border p-2 rounded" required>
+      <textarea name="message" placeholder="Votre message" class="w-full border p-2 rounded" rows="5" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Envoyer</button>
+    </form>
+    <p class="text-sm text-center mt-4">* Remplace "sob-l'antic" par l'identifiant de ton formulaire sur <a href='https://formspree.io' target='_blank' class='underline text-blue-600'>Formspree.io</a></p>
+  </section>
+
+  <footer class="text-center py-6 bg-gray-200 mt-12">
+    &copy; 2025 Sob Galerie. Tous droits réservés.
+  </footer>
+</body>
+</html>
